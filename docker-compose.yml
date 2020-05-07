@@ -1,0 +1,12 @@
+# docker-compose.yml
+version: '3'
+networks:
+  myapp-network:
+services:
+  # main application
+  myapp:
+    container_name: myapp
+    build:
+      .
+    ports:
+      - "8000:8000"
